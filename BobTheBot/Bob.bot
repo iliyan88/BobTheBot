@@ -1,0 +1,23 @@
+{
+    "name": "TheBobBot",
+    "description": "",
+    "secretKey": "",
+    "services": [
+        {
+            "appId": "551e9d55-8ce4-4830-a3da-d0ec2bc59b91",
+            "id": "bea98650-748a-11e8-a3ac-fb4c46d160e7",
+            "type": "endpoint",
+            "appPassword": "aiGQEJJO96)|vubwdO793#)",
+            "endpoint": "http://thebob.azurewebsites.net/api/Messages",
+            "name": "TheBobBot"
+        },
+        {
+            "id": "fc1a6920-791a-11e8-b7ed-f79c3f4b062e",
+            "name": "Lochal Bob",
+            "type": "endpoint",
+            "appId": "",
+            "appPassword": "",
+            "endpoint": "http://localhost:1738/api/messages"
+        }
+    ]
+}

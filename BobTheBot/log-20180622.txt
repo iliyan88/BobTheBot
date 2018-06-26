@@ -1,0 +1,1034 @@
+2018-06-22 11:44:20.839 +03:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:1738/  0
+2018-06-22 11:44:20.839 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:1738/api/values  
+2018-06-22 11:44:20.927 +03:00 [Information] Request finished in 160.0058ms 200 
+2018-06-22 11:44:21.359 +03:00 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing action "BobTheBot.Controllers.ValuesController.Get (BobTheBot)"
+2018-06-22 11:44:21.475 +03:00 [Information] Executing action method "BobTheBot.Controllers.ValuesController.Get (BobTheBot)" - Validation state: Valid
+2018-06-22 11:44:21.482 +03:00 [Information] Executed action method "BobTheBot.Controllers.ValuesController.Get (BobTheBot)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 1.7394ms.
+2018-06-22 11:44:21.526 +03:00 [Information] Executing ObjectResult, writing value of type '"System.String[]"'.
+2018-06-22 11:44:21.747 +03:00 [Information] Executed action "BobTheBot.Controllers.ValuesController.Get (BobTheBot)" in 321.6846ms
+2018-06-22 11:44:21.782 +03:00 [Information] Request finished in 984.6731ms 200 application/json; charset=utf-8
+2018-06-22 11:44:25.848 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:1738/api/Messages application/json 534
+2018-06-22 11:44:25.883 +03:00 [Information] Route matched with "{action = \"Post\", controller = \"Messages\"}". Executing action "WebApplication.Controllers.MessagesController.Post (BobTheBot)"
+2018-06-22 11:44:25.899 +03:00 [Information] Executed action "WebApplication.Controllers.MessagesController.Post (BobTheBot)" in 13.0228ms
+2018-06-22 11:44:26.030 +03:00 [Error] An unhandled exception has occurred while executing the request
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Configuration.IConfigurationRoot' while attempting to activate 'BobTheBot.MessageService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.CreateServiceAccessor(Type serviceType)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__23.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-06-22 11:44:26.106 +03:00 [Information] Request finished in 256.9746ms 500 text/html; charset=utf-8
+2018-06-22 11:44:33.306 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:1738/api/Messages application/json 533
+2018-06-22 11:44:33.311 +03:00 [Information] Route matched with "{action = \"Post\", controller = \"Messages\"}". Executing action "WebApplication.Controllers.MessagesController.Post (BobTheBot)"
+2018-06-22 11:44:33.314 +03:00 [Information] Executed action "WebApplication.Controllers.MessagesController.Post (BobTheBot)" in 1.1465ms
+2018-06-22 11:44:33.354 +03:00 [Error] An unhandled exception has occurred while executing the request
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Configuration.IConfigurationRoot' while attempting to activate 'BobTheBot.MessageService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.CreateServiceAccessor(Type serviceType)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__23.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-06-22 11:44:33.400 +03:00 [Information] Request finished in 93.0618ms 500 text/html; charset=utf-8
+2018-06-22 11:47:57.176 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:1738/api/Messages application/json 534
+2018-06-22 11:47:57.835 +03:00 [Information] Route matched with "{action = \"Post\", controller = \"Messages\"}". Executing action "WebApplication.Controllers.MessagesController.Post (BobTheBot)"
+2018-06-22 11:47:57.864 +03:00 [Information] Executed action "WebApplication.Controllers.MessagesController.Post (BobTheBot)" in 22.3344ms
+2018-06-22 11:47:57.954 +03:00 [Error] An unhandled exception has occurred while executing the request
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Configuration.IConfigurationRoot' while attempting to activate 'BobTheBot.MessageService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.CreateServiceAccessor(Type serviceType)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__23.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-06-22 11:47:58.050 +03:00 [Information] Request finished in 913.9412ms 500 text/html; charset=utf-8
+2018-06-22 11:48:46.251 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:1738/api/Messages application/json 534
+2018-06-22 11:48:46.251 +03:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:1738/  0
+2018-06-22 11:48:46.251 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:1738/api/values  
+2018-06-22 11:48:46.327 +03:00 [Information] Request finished in 138.2277ms 200 
+2018-06-22 11:48:46.745 +03:00 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing action "BobTheBot.Controllers.ValuesController.Get (BobTheBot)"
+2018-06-22 11:48:46.743 +03:00 [Information] Route matched with "{action = \"Post\", controller = \"Messages\"}". Executing action "WebApplication.Controllers.MessagesController.Post (BobTheBot)"
+2018-06-22 11:48:46.896 +03:00 [Information] Executing action method "BobTheBot.Controllers.ValuesController.Get (BobTheBot)" - Validation state: Valid
+2018-06-22 11:48:46.910 +03:00 [Information] Executed action method "BobTheBot.Controllers.ValuesController.Get (BobTheBot)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 1.7032ms.
+2018-06-22 11:48:46.974 +03:00 [Information] Executing ObjectResult, writing value of type '"System.String[]"'.
+2018-06-22 11:48:47.180 +03:00 [Information] Executed action "BobTheBot.Controllers.ValuesController.Get (BobTheBot)" in 392.5065ms
+2018-06-22 11:48:47.206 +03:00 [Information] Request finished in 1001.551ms 200 application/json; charset=utf-8
+2018-06-22 11:48:47.516 +03:00 [Information] Executing action method "WebApplication.Controllers.MessagesController.Post (BobTheBot)" with arguments (["Microsoft.Bot.Connector.Activity"]) - Validation state: Valid
+2018-06-22 11:48:47.728 +03:00 [Information] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite"' with options: "None"
+2018-06-22 11:48:47.991 +03:00 [Information] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""PRAGMA foreign_keys=ON;"
+2018-06-22 11:48:48.001 +03:00 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"s\".\"Id\", \"s\".\"Word\"
+FROM \"SearchKeys\" AS \"s\""
+2018-06-22 11:48:52.400 +03:00 [Information] Executed action method "WebApplication.Controllers.MessagesController.Post (BobTheBot)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 4880.2458ms.
+2018-06-22 11:48:52.408 +03:00 [Information] Executing ObjectResult, writing value of type '"RJ.Core.Result`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]"'.
+2018-06-22 11:48:52.440 +03:00 [Information] Executed action "WebApplication.Controllers.MessagesController.Post (BobTheBot)" in 5688.7628ms
+2018-06-22 11:48:52.452 +03:00 [Information] Request finished in 6267.5187ms 200 application/json; charset=utf-8
+2018-06-22 11:56:44.018 +03:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:1738/  0
+2018-06-22 11:56:44.018 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:1738/api/values  
+2018-06-22 11:56:44.093 +03:00 [Information] Request finished in 144.7445ms 200 
+2018-06-22 11:56:44.485 +03:00 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing action "BobTheBot.Controllers.ValuesController.Get (BobTheBot)"
+2018-06-22 11:56:44.592 +03:00 [Information] Executing action method "BobTheBot.Controllers.ValuesController.Get (BobTheBot)" - Validation state: Valid
+2018-06-22 11:56:44.601 +03:00 [Information] Executed action method "BobTheBot.Controllers.ValuesController.Get (BobTheBot)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 1.6964ms.
+2018-06-22 11:56:44.646 +03:00 [Information] Executing ObjectResult, writing value of type '"System.String[]"'.
+2018-06-22 11:56:44.786 +03:00 [Information] Executed action "BobTheBot.Controllers.ValuesController.Get (BobTheBot)" in 290.4806ms
+2018-06-22 11:56:44.792 +03:00 [Information] Request finished in 843.6334ms 200 application/json; charset=utf-8
+2018-06-22 11:56:46.135 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:1738/api/Messages application/json 548
+2018-06-22 11:56:46.166 +03:00 [Information] Route matched with "{action = \"Post\", controller = \"Messages\"}". Executing action "WebApplication.Controllers.MessagesController.Post (BobTheBot)"
+2018-06-22 11:56:46.576 +03:00 [Information] Executing action method "WebApplication.Controllers.MessagesController.Post (BobTheBot)" with arguments (["Microsoft.Bot.Connector.Activity"]) - Validation state: Valid
+2018-06-22 11:56:46.766 +03:00 [Information] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite"' with options: "None"
+2018-06-22 11:56:46.932 +03:00 [Information] Executed DbCommand ("12"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""PRAGMA foreign_keys=ON;"
+2018-06-22 11:56:46.942 +03:00 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"s\".\"Id\", \"s\".\"Word\"
+FROM \"SearchKeys\" AS \"s\""
+2018-06-22 14:20:27.330 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:1738/api/values  
+2018-06-22 14:20:27.329 +03:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:1738/  0
+2018-06-22 14:20:27.405 +03:00 [Information] Request finished in 167.7674ms 200 
+2018-06-22 14:20:27.849 +03:00 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing action "BobTheBot.Controllers.ValuesController.Get (BobTheBot)"
+2018-06-22 14:20:27.983 +03:00 [Information] Executing action method "BobTheBot.Controllers.ValuesController.Get (BobTheBot)" - Validation state: Valid
+2018-06-22 14:20:27.997 +03:00 [Information] Executed action method "BobTheBot.Controllers.ValuesController.Get (BobTheBot)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 6.7587ms.
+2018-06-22 14:20:28.039 +03:00 [Information] Executing ObjectResult, writing value of type '"System.String[]"'.
+2018-06-22 14:20:28.255 +03:00 [Information] Executed action "BobTheBot.Controllers.ValuesController.Get (BobTheBot)" in 346.0759ms
+2018-06-22 14:20:28.289 +03:00 [Information] Request finished in 1022.3621ms 200 application/json; charset=utf-8
+2018-06-22 14:20:59.120 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:1738/api/Messages application/json 536
+2018-06-22 14:20:59.165 +03:00 [Information] Route matched with "{action = \"Post\", controller = \"Messages\"}". Executing action "WebApplication.Controllers.MessagesController.Post (BobTheBot)"
+2018-06-22 14:20:59.775 +03:00 [Information] Executing action method "WebApplication.Controllers.MessagesController.Post (BobTheBot)" with arguments (["Microsoft.Bot.Connector.Activity"]) - Validation state: Valid
+2018-06-22 14:20:59.965 +03:00 [Information] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite"' with options: "None"
+2018-06-22 14:21:00.236 +03:00 [Information] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""PRAGMA foreign_keys=ON;"
+2018-06-22 14:21:00.254 +03:00 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"s\".\"Id\", \"s\".\"Word\"
+FROM \"SearchKeys\" AS \"s\""
+2018-06-22 14:44:19.304 +03:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:1738/  0
+2018-06-22 14:44:19.304 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:1738/api/values  
+2018-06-22 14:44:19.455 +03:00 [Information] Request finished in 207.4676ms 200 
+2018-06-22 14:44:20.080 +03:00 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing action "BobTheBot.Controllers.ValuesController.Get (BobTheBot)"
+2018-06-22 14:44:20.205 +03:00 [Information] Executing action method "BobTheBot.Controllers.ValuesController.Get (BobTheBot)" - Validation state: Valid
+2018-06-22 14:44:20.212 +03:00 [Information] Executed action method "BobTheBot.Controllers.ValuesController.Get (BobTheBot)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 1.7199ms.
+2018-06-22 14:44:20.261 +03:00 [Information] Executing ObjectResult, writing value of type '"System.String[]"'.
+2018-06-22 14:44:20.490 +03:00 [Information] Executed action "BobTheBot.Controllers.ValuesController.Get (BobTheBot)" in 372.5225ms
+2018-06-22 14:44:20.507 +03:00 [Information] Request finished in 1277.4246ms 200 application/json; charset=utf-8
+2018-06-22 14:44:22.063 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:1738/api/Messages application/json 539
+2018-06-22 14:44:22.097 +03:00 [Information] Route matched with "{action = \"Post\", controller = \"Messages\"}". Executing action "WebApplication.Controllers.MessagesController.Post (BobTheBot)"
+2018-06-22 14:44:22.563 +03:00 [Information] Executing action method "WebApplication.Controllers.MessagesController.Post (BobTheBot)" with arguments (["Microsoft.Bot.Connector.Activity"]) - Validation state: Valid
+2018-06-22 14:44:22.734 +03:00 [Information] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite"' with options: "None"
+2018-06-22 14:44:22.928 +03:00 [Information] Executed DbCommand ("13"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""PRAGMA foreign_keys=ON;"
+2018-06-22 14:44:22.937 +03:00 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"s\".\"Id\", \"s\".\"Word\"
+FROM \"SearchKeys\" AS \"s\""
+2018-06-22 14:50:12.301 +03:00 [Information] Executed action "WebApplication.Controllers.MessagesController.Post (BobTheBot)" in 350201.6639ms
+2018-06-22 14:50:12.438 +03:00 [Error] An unhandled exception has occurred while executing the request
+System.AggregateException: One or more errors occurred. (Operation returned an invalid status code 'InternalServerError') ---> Microsoft.Bot.Connector.ErrorResponseException: Operation returned an invalid status code 'InternalServerError'
+   at Microsoft.Bot.Connector.Conversations.<CreateConversationWithHttpMessagesAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.Bot.Connector.ConversationsExtensions.<CreateConversationAsync>d__3.MoveNext()
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at BobTheBot.MessageService.<CheckSentences>d__7.MoveNext() in D:\BobTheBot\BobTheBot\MessageService.cs:line 110
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApplication.Controllers.MessagesController.<Post>d__2.MoveNext() in D:\BobTheBot\BobTheBot\Controllers\MessagesController.cs:line 33
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.<Execute>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__23.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+---> (Inner Exception #0) Microsoft.Bot.Connector.ErrorResponseException: Operation returned an invalid status code 'InternalServerError'
+   at Microsoft.Bot.Connector.Conversations.<CreateConversationWithHttpMessagesAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.Bot.Connector.ConversationsExtensions.<CreateConversationAsync>d__3.MoveNext()<---
+
+2018-06-22 14:50:12.987 +03:00 [Information] Request finished in 350924.4915ms 500 text/html; charset=utf-8
+2018-06-22 14:54:49.474 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:1738/api/Messages application/json 491
+2018-06-22 14:54:49.474 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:1738/api/Messages application/json 468
+2018-06-22 14:54:49.501 +03:00 [Information] Route matched with "{action = \"Post\", controller = \"Messages\"}". Executing action "WebApplication.Controllers.MessagesController.Post (BobTheBot)"
+2018-06-22 14:54:49.504 +03:00 [Information] Route matched with "{action = \"Post\", controller = \"Messages\"}". Executing action "WebApplication.Controllers.MessagesController.Post (BobTheBot)"
+2018-06-22 14:55:09.759 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:1738/api/Messages application/json 468
+2018-06-22 14:55:09.764 +03:00 [Information] Route matched with "{action = \"Post\", controller = \"Messages\"}". Executing action "WebApplication.Controllers.MessagesController.Post (BobTheBot)"
+2018-06-22 14:55:09.767 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:1738/api/Messages application/json 635
+2018-06-22 14:55:09.776 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:1738/api/Messages application/json 491
+2018-06-22 14:55:09.839 +03:00 [Information] Route matched with "{action = \"Post\", controller = \"Messages\"}". Executing action "WebApplication.Controllers.MessagesController.Post (BobTheBot)"
+2018-06-22 14:55:09.845 +03:00 [Information] Executing action method "WebApplication.Controllers.MessagesController.Post (BobTheBot)" with arguments (["Microsoft.Bot.Connector.Activity"]) - Validation state: Valid
+2018-06-22 14:55:09.855 +03:00 [Information] Executing action method "WebApplication.Controllers.MessagesController.Post (BobTheBot)" with arguments (["Microsoft.Bot.Connector.Activity"]) - Validation state: Valid
+2018-06-22 14:55:09.876 +03:00 [Information] Executing action method "WebApplication.Controllers.MessagesController.Post (BobTheBot)" with arguments (["Microsoft.Bot.Connector.Activity"]) - Validation state: Valid
+2018-06-22 14:55:09.917 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:1738/api/Messages application/json 532
+2018-06-22 14:55:09.918 +03:00 [Information] Executing action method "WebApplication.Controllers.MessagesController.Post (BobTheBot)" with arguments (["Microsoft.Bot.Connector.Activity"]) - Validation state: Valid
+2018-06-22 14:55:09.979 +03:00 [Information] Route matched with "{action = \"Post\", controller = \"Messages\"}". Executing action "WebApplication.Controllers.MessagesController.Post (BobTheBot)"
+2018-06-22 14:55:09.983 +03:00 [Information] Route matched with "{action = \"Post\", controller = \"Messages\"}". Executing action "WebApplication.Controllers.MessagesController.Post (BobTheBot)"
+2018-06-22 14:55:10.019 +03:00 [Information] Executing action method "WebApplication.Controllers.MessagesController.Post (BobTheBot)" with arguments (["Microsoft.Bot.Connector.Activity"]) - Validation state: Valid
+2018-06-22 14:55:10.052 +03:00 [Information] Executing action method "WebApplication.Controllers.MessagesController.Post (BobTheBot)" with arguments (["Microsoft.Bot.Connector.Activity"]) - Validation state: Valid
+2018-06-22 14:55:10.539 +03:00 [Information] Executed action "WebApplication.Controllers.MessagesController.Post (BobTheBot)" in 21033.6012ms
+2018-06-22 14:55:12.199 +03:00 [Information] Executed action "WebApplication.Controllers.MessagesController.Post (BobTheBot)" in 807.0059ms
+2018-06-22 14:55:12.205 +03:00 [Information] Executed action "WebApplication.Controllers.MessagesController.Post (BobTheBot)" in 22685.9946ms
+2018-06-22 14:55:12.372 +03:00 [Information] Executed action "WebApplication.Controllers.MessagesController.Post (BobTheBot)" in 2445.9771ms
+2018-06-22 14:55:12.418 +03:00 [Information] Executed action method "WebApplication.Controllers.MessagesController.Post (BobTheBot)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 2422.238ms.
+2018-06-22 14:55:12.450 +03:00 [Information] Executing ObjectResult, writing value of type '"RJ.Core.Result`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]"'.
+2018-06-22 14:55:12.505 +03:00 [Error] An unhandled exception has occurred while executing the request
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at BobTheBot.MessageService.<CheckSentences>d__7.MoveNext() in D:\BobTheBot\BobTheBot\MessageService.cs:line 70
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApplication.Controllers.MessagesController.<Post>d__2.MoveNext() in D:\BobTheBot\BobTheBot\Controllers\MessagesController.cs:line 33
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.<Execute>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__23.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-06-22 14:55:12.523 +03:00 [Error] An unhandled exception has occurred while executing the request
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at BobTheBot.MessageService.<CheckSentences>d__7.MoveNext() in D:\BobTheBot\BobTheBot\MessageService.cs:line 70
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApplication.Controllers.MessagesController.<Post>d__2.MoveNext() in D:\BobTheBot\BobTheBot\Controllers\MessagesController.cs:line 33
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.<Execute>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__23.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-06-22 14:55:12.628 +03:00 [Information] Executed action "WebApplication.Controllers.MessagesController.Post (BobTheBot)" in 2677.6497ms
+2018-06-22 14:55:12.640 +03:00 [Error] An unhandled exception has occurred while executing the request
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at BobTheBot.MessageService.<CheckSentences>d__7.MoveNext() in D:\BobTheBot\BobTheBot\MessageService.cs:line 70
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApplication.Controllers.MessagesController.<Post>d__2.MoveNext() in D:\BobTheBot\BobTheBot\Controllers\MessagesController.cs:line 33
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.<Execute>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__23.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-06-22 14:55:12.669 +03:00 [Information] Request finished in 23161.1415ms 500 text/html; charset=utf-8
+2018-06-22 14:55:12.753 +03:00 [Information] Request finished in 2894.0087ms 200 application/json; charset=utf-8
+2018-06-22 14:55:12.759 +03:00 [Information] Request finished in 2925.5182ms 500 text/html; charset=utf-8
+2018-06-22 14:55:12.791 +03:00 [Information] Request finished in 23293.9953ms 500 text/html; charset=utf-8
+2018-06-22 14:55:12.824 +03:00 [Error] An unhandled exception has occurred while executing the request
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at BobTheBot.MessageService.<CheckSentences>d__7.MoveNext() in D:\BobTheBot\BobTheBot\MessageService.cs:line 70
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApplication.Controllers.MessagesController.<Post>d__2.MoveNext() in D:\BobTheBot\BobTheBot\Controllers\MessagesController.cs:line 33
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.<Execute>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__23.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-06-22 14:55:12.864 +03:00 [Information] Request finished in 3127.0706ms 500 text/html; charset=utf-8
+2018-06-22 15:40:40.597 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:1738/api/values  
+2018-06-22 15:40:40.596 +03:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:1738/  0
+2018-06-22 15:40:40.683 +03:00 [Information] Request finished in 166.2249ms 200 
+2018-06-22 15:40:41.276 +03:00 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing action "BobTheBot.Controllers.ValuesController.Get (BobTheBot)"
+2018-06-22 15:40:41.442 +03:00 [Information] Executing action method "BobTheBot.Controllers.ValuesController.Get (BobTheBot)" - Validation state: Valid
+2018-06-22 15:40:41.457 +03:00 [Information] Executed action method "BobTheBot.Controllers.ValuesController.Get (BobTheBot)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 5.1411ms.
+2018-06-22 15:40:41.520 +03:00 [Information] Executing ObjectResult, writing value of type '"System.String[]"'.
+2018-06-22 15:40:41.885 +03:00 [Information] Executed action "BobTheBot.Controllers.ValuesController.Get (BobTheBot)" in 534.179ms
+2018-06-22 15:40:41.955 +03:00 [Information] Request finished in 1379.8987ms 200 application/json; charset=utf-8
+2018-06-22 15:40:51.526 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:1738/api/Messages application/json 532
+2018-06-22 15:40:51.576 +03:00 [Information] Route matched with "{action = \"Post\", controller = \"Messages\"}". Executing action "WebApplication.Controllers.MessagesController.Post (BobTheBot)"
+2018-06-22 15:40:52.102 +03:00 [Information] Executing action method "WebApplication.Controllers.MessagesController.Post (BobTheBot)" with arguments (["Microsoft.Bot.Connector.Activity"]) - Validation state: Valid
+2018-06-22 15:40:52.318 +03:00 [Information] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite"' with options: "None"
+2018-06-22 15:40:52.673 +03:00 [Information] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""PRAGMA foreign_keys=ON;"
+2018-06-22 15:40:52.687 +03:00 [Information] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"s\".\"Id\", \"s\".\"Word\"
+FROM \"SearchKeys\" AS \"s\""
+2018-06-22 15:46:18.807 +03:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:1738/  0
+2018-06-22 15:46:18.807 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:1738/api/values  
+2018-06-22 15:46:18.942 +03:00 [Information] Request finished in 270.7488ms 200 
+2018-06-22 15:46:20.031 +03:00 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing action "BobTheBot.Controllers.ValuesController.Get (BobTheBot)"
+2018-06-22 15:46:20.299 +03:00 [Information] Executing action method "BobTheBot.Controllers.ValuesController.Get (BobTheBot)" - Validation state: Valid
+2018-06-22 15:46:20.308 +03:00 [Information] Executed action method "BobTheBot.Controllers.ValuesController.Get (BobTheBot)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 1.8462ms.
+2018-06-22 15:46:20.386 +03:00 [Information] Executing ObjectResult, writing value of type '"System.String[]"'.
+2018-06-22 15:46:20.610 +03:00 [Information] Executed action "BobTheBot.Controllers.ValuesController.Get (BobTheBot)" in 554.4013ms
+2018-06-22 15:46:20.619 +03:00 [Information] Request finished in 1961.2019ms 200 application/json; charset=utf-8
+2018-06-22 15:52:52.143 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:1738/api/Messages application/json 532
+2018-06-22 15:52:52.199 +03:00 [Information] Route matched with "{action = \"Post\", controller = \"Messages\"}". Executing action "WebApplication.Controllers.MessagesController.Post (BobTheBot)"
+2018-06-22 15:52:52.778 +03:00 [Information] Executing action method "WebApplication.Controllers.MessagesController.Post (BobTheBot)" with arguments (["Microsoft.Bot.Connector.Activity"]) - Validation state: Valid
+2018-06-22 15:52:53.032 +03:00 [Information] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite"' with options: "None"
+2018-06-22 15:52:53.315 +03:00 [Information] Executed DbCommand ("13"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""PRAGMA foreign_keys=ON;"
+2018-06-22 15:52:53.325 +03:00 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"s\".\"Id\", \"s\".\"Word\"
+FROM \"SearchKeys\" AS \"s\""
+2018-06-22 17:05:05.927 +03:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:1738/  0
+2018-06-22 17:05:05.927 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:1738/api/values  
+2018-06-22 17:05:06.024 +03:00 [Information] Request finished in 171.3238ms 200 
+2018-06-22 17:05:06.447 +03:00 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing action "BobTheBot.Controllers.ValuesController.Get (BobTheBot)"
+2018-06-22 17:05:06.559 +03:00 [Information] Executing action method "BobTheBot.Controllers.ValuesController.Get (BobTheBot)" - Validation state: Valid
+2018-06-22 17:05:06.569 +03:00 [Information] Executed action method "BobTheBot.Controllers.ValuesController.Get (BobTheBot)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 2.3354ms.
+2018-06-22 17:05:06.620 +03:00 [Information] Executing ObjectResult, writing value of type '"System.String[]"'.
+2018-06-22 17:05:06.781 +03:00 [Information] Executed action "BobTheBot.Controllers.ValuesController.Get (BobTheBot)" in 322.2461ms
+2018-06-22 17:05:06.784 +03:00 [Information] Request finished in 934.2277ms 200 application/json; charset=utf-8
+2018-06-22 17:06:00.560 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:1738/api/values  
+2018-06-22 17:06:00.560 +03:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:1738/  0
+2018-06-22 17:06:00.674 +03:00 [Information] Request finished in 189.2574ms 200 
+2018-06-22 17:06:01.265 +03:00 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing action "BobTheBot.Controllers.ValuesController.Get (BobTheBot)"
+2018-06-22 17:06:01.425 +03:00 [Information] Executing action method "BobTheBot.Controllers.ValuesController.Get (BobTheBot)" - Validation state: Valid
+2018-06-22 17:06:01.432 +03:00 [Information] Executed action method "BobTheBot.Controllers.ValuesController.Get (BobTheBot)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 1.6445ms.
+2018-06-22 17:06:01.476 +03:00 [Information] Executing ObjectResult, writing value of type '"System.String[]"'.
+2018-06-22 17:06:01.673 +03:00 [Information] Executed action "BobTheBot.Controllers.ValuesController.Get (BobTheBot)" in 372.2593ms
+2018-06-22 17:06:01.689 +03:00 [Information] Request finished in 1200.6344ms 200 application/json; charset=utf-8
+2018-06-22 17:06:05.498 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:1738/api/Messages application/json 532
+2018-06-22 17:06:05.538 +03:00 [Information] Route matched with "{action = \"Post\", controller = \"Messages\"}". Executing action "WebApplication.Controllers.MessagesController.Post (BobTheBot)"
+2018-06-22 17:06:06.005 +03:00 [Information] Executing action method "WebApplication.Controllers.MessagesController.Post (BobTheBot)" with arguments (["Microsoft.Bot.Connector.Activity"]) - Validation state: Valid
+2018-06-22 17:06:06.201 +03:00 [Information] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite"' with options: "None"
+2018-06-22 17:06:06.403 +03:00 [Information] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""PRAGMA foreign_keys=ON;"
+2018-06-22 17:06:06.415 +03:00 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"s\".\"Id\", \"s\".\"Word\"
+FROM \"SearchKeys\" AS \"s\""
+2018-06-22 17:06:15.388 +03:00 [Information] Executed action "WebApplication.Controllers.MessagesController.Post (BobTheBot)" in 9847.3116ms
+2018-06-22 17:06:15.536 +03:00 [Error] An unhandled exception has occurred while executing the request
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Microsoft.Bot.Connector.Activity.CreateReply(String text, String locale)
+   at BobTheBot.MessageService.<CheckSentences>d__7.MoveNext() in D:\BobTheBot\BobTheBot\MessageService.cs:line 98
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApplication.Controllers.MessagesController.<Post>d__2.MoveNext() in D:\BobTheBot\BobTheBot\Controllers\MessagesController.cs:line 33
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.<Execute>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__23.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-06-22 17:06:15.614 +03:00 [Information] Request finished in 10114.4201ms 500 text/html; charset=utf-8
+2018-06-22 17:06:48.308 +03:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:1738/  0
+2018-06-22 17:06:48.308 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:1738/api/values  
+2018-06-22 17:06:48.393 +03:00 [Information] Request finished in 160.2424ms 200 
+2018-06-22 17:06:48.851 +03:00 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing action "BobTheBot.Controllers.ValuesController.Get (BobTheBot)"
+2018-06-22 17:06:48.970 +03:00 [Information] Executing action method "BobTheBot.Controllers.ValuesController.Get (BobTheBot)" - Validation state: Valid
+2018-06-22 17:06:48.978 +03:00 [Information] Executed action method "BobTheBot.Controllers.ValuesController.Get (BobTheBot)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 1.7769ms.
+2018-06-22 17:06:49.023 +03:00 [Information] Executing ObjectResult, writing value of type '"System.String[]"'.
+2018-06-22 17:06:49.182 +03:00 [Information] Executed action "BobTheBot.Controllers.ValuesController.Get (BobTheBot)" in 309.3089ms
+2018-06-22 17:06:49.225 +03:00 [Information] Request finished in 961.9652ms 200 application/json; charset=utf-8
+2018-06-22 17:06:53.840 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:1738/api/Messages application/json 536
+2018-06-22 17:06:53.891 +03:00 [Information] Route matched with "{action = \"Post\", controller = \"Messages\"}". Executing action "WebApplication.Controllers.MessagesController.Post (BobTheBot)"
+2018-06-22 17:06:54.290 +03:00 [Information] Executing action method "WebApplication.Controllers.MessagesController.Post (BobTheBot)" with arguments (["Microsoft.Bot.Connector.Activity"]) - Validation state: Valid
+2018-06-22 17:06:54.440 +03:00 [Information] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite"' with options: "None"
+2018-06-22 17:06:54.600 +03:00 [Information] Executed DbCommand ("12"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""PRAGMA foreign_keys=ON;"
+2018-06-22 17:06:54.609 +03:00 [Information] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"s\".\"Id\", \"s\".\"Word\"
+FROM \"SearchKeys\" AS \"s\""
+2018-06-22 17:06:58.995 +03:00 [Information] Executed action "WebApplication.Controllers.MessagesController.Post (BobTheBot)" in 5101.632ms
+2018-06-22 17:06:59.098 +03:00 [Error] An unhandled exception has occurred while executing the request
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Microsoft.Bot.Connector.Activity.CreateReply(String text, String locale)
+   at BobTheBot.MessageService.<CheckSentences>d__7.MoveNext() in D:\BobTheBot\BobTheBot\MessageService.cs:line 98
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApplication.Controllers.MessagesController.<Post>d__2.MoveNext() in D:\BobTheBot\BobTheBot\Controllers\MessagesController.cs:line 33
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.<Execute>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__23.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-06-22 17:06:59.175 +03:00 [Information] Request finished in 5333.4033ms 500 text/html; charset=utf-8
+2018-06-22 17:22:17.887 +03:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:1738/  0
+2018-06-22 17:22:17.888 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:1738/api/values  
+2018-06-22 17:22:17.969 +03:00 [Information] Request finished in 145.7159ms 200 
+2018-06-22 17:22:18.395 +03:00 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing action "BobTheBot.Controllers.ValuesController.Get (BobTheBot)"
+2018-06-22 17:22:18.505 +03:00 [Information] Executing action method "BobTheBot.Controllers.ValuesController.Get (BobTheBot)" - Validation state: Valid
+2018-06-22 17:22:18.515 +03:00 [Information] Executed action method "BobTheBot.Controllers.ValuesController.Get (BobTheBot)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 1.9339ms.
+2018-06-22 17:22:18.559 +03:00 [Information] Executing ObjectResult, writing value of type '"System.String[]"'.
+2018-06-22 17:22:18.710 +03:00 [Information] Executed action "BobTheBot.Controllers.ValuesController.Get (BobTheBot)" in 293.9318ms
+2018-06-22 17:22:18.725 +03:00 [Information] Request finished in 894.6463ms 200 application/json; charset=utf-8
+2018-06-22 17:22:20.546 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:1738/api/Messages application/json 537
+2018-06-22 17:22:20.596 +03:00 [Information] Route matched with "{action = \"Post\", controller = \"Messages\"}". Executing action "WebApplication.Controllers.MessagesController.Post (BobTheBot)"
+2018-06-22 17:22:21.031 +03:00 [Information] Executing action method "WebApplication.Controllers.MessagesController.Post (BobTheBot)" with arguments (["Microsoft.Bot.Connector.Activity"]) - Validation state: Valid
+2018-06-22 17:22:21.235 +03:00 [Information] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite"' with options: "None"
+2018-06-22 17:22:21.520 +03:00 [Information] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""PRAGMA foreign_keys=ON;"
+2018-06-22 17:22:21.548 +03:00 [Information] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"s\".\"Id\", \"s\".\"Word\"
+FROM \"SearchKeys\" AS \"s\""
+2018-06-22 17:33:00.687 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:1738/api/Messages application/json 535
+2018-06-22 17:33:00.687 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:1738/api/values  
+2018-06-22 17:33:00.687 +03:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:1738/  0
+2018-06-22 17:33:00.872 +03:00 [Information] Request finished in 267.8153ms 200 
+2018-06-22 17:33:01.425 +03:00 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing action "BobTheBot.Controllers.ValuesController.Get (BobTheBot)"
+2018-06-22 17:33:01.438 +03:00 [Information] Route matched with "{action = \"Post\", controller = \"Messages\"}". Executing action "WebApplication.Controllers.MessagesController.Post (BobTheBot)"
+2018-06-22 17:33:01.585 +03:00 [Information] Executing action method "BobTheBot.Controllers.ValuesController.Get (BobTheBot)" - Validation state: Valid
+2018-06-22 17:33:01.606 +03:00 [Information] Executed action method "BobTheBot.Controllers.ValuesController.Get (BobTheBot)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 10.9646ms.
+2018-06-22 17:33:01.710 +03:00 [Information] Executing ObjectResult, writing value of type '"System.String[]"'.
+2018-06-22 17:33:02.022 +03:00 [Information] Executed action "BobTheBot.Controllers.ValuesController.Get (BobTheBot)" in 458.9399ms
+2018-06-22 17:33:02.061 +03:00 [Information] Request finished in 1427.344ms 200 application/json; charset=utf-8
+2018-06-22 17:33:02.311 +03:00 [Information] Executing action method "WebApplication.Controllers.MessagesController.Post (BobTheBot)" with arguments (["Microsoft.Bot.Connector.Activity"]) - Validation state: Valid
+2018-06-22 17:33:02.559 +03:00 [Information] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite"' with options: "None"
+2018-06-22 17:33:02.750 +03:00 [Information] Executed DbCommand ("13"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""PRAGMA foreign_keys=ON;"
+2018-06-22 17:33:02.758 +03:00 [Information] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"s\".\"Id\", \"s\".\"Word\"
+FROM \"SearchKeys\" AS \"s\""
+2018-06-22 17:34:33.382 +03:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:1738/  0
+2018-06-22 17:34:33.383 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:1738/api/values  
+2018-06-22 17:34:33.468 +03:00 [Information] Request finished in 135.923ms 200 
+2018-06-22 17:34:33.892 +03:00 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing action "BobTheBot.Controllers.ValuesController.Get (BobTheBot)"
+2018-06-22 17:34:34.007 +03:00 [Information] Executing action method "BobTheBot.Controllers.ValuesController.Get (BobTheBot)" - Validation state: Valid
+2018-06-22 17:34:34.014 +03:00 [Information] Executed action method "BobTheBot.Controllers.ValuesController.Get (BobTheBot)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 1.6599ms.
+2018-06-22 17:34:34.053 +03:00 [Information] Executing ObjectResult, writing value of type '"System.String[]"'.
+2018-06-22 17:34:34.236 +03:00 [Information] Executed action "BobTheBot.Controllers.ValuesController.Get (BobTheBot)" in 323.5281ms
+2018-06-22 17:34:34.251 +03:00 [Information] Request finished in 915.026ms 200 application/json; charset=utf-8
+2018-06-22 17:34:43.373 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:1738/api/Messages application/json 538
+2018-06-22 17:34:43.430 +03:00 [Information] Route matched with "{action = \"Post\", controller = \"Messages\"}". Executing action "WebApplication.Controllers.MessagesController.Post (BobTheBot)"
+2018-06-22 17:34:43.824 +03:00 [Information] Executing action method "WebApplication.Controllers.MessagesController.Post (BobTheBot)" with arguments (["Microsoft.Bot.Connector.Activity"]) - Validation state: Valid
+2018-06-22 17:34:43.972 +03:00 [Information] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite"' with options: "None"
+2018-06-22 17:34:44.142 +03:00 [Information] Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""PRAGMA foreign_keys=ON;"
+2018-06-22 17:34:44.149 +03:00 [Information] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"s\".\"Id\", \"s\".\"Word\"
+FROM \"SearchKeys\" AS \"s\""
+2018-06-22 17:35:22.512 +03:00 [Information] Executed action "WebApplication.Controllers.MessagesController.Post (BobTheBot)" in 39079.9781ms
+2018-06-22 17:35:22.648 +03:00 [Error] An unhandled exception has occurred while executing the request
+System.AggregateException: One or more errors occurred. (Operation returned an invalid status code 'InternalServerError') ---> Microsoft.Bot.Connector.ErrorResponseException: Operation returned an invalid status code 'InternalServerError'
+   at Microsoft.Bot.Connector.Conversations.<CreateConversationWithHttpMessagesAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.Bot.Connector.ConversationsExtensions.<CreateConversationAsync>d__3.MoveNext()
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at BobTheBot.MessageService.<CheckSentences>d__7.MoveNext() in D:\BobTheBot\BobTheBot\MessageService.cs:line 123
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApplication.Controllers.MessagesController.<Post>d__2.MoveNext() in D:\BobTheBot\BobTheBot\Controllers\MessagesController.cs:line 33
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.<Execute>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__23.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+---> (Inner Exception #0) Microsoft.Bot.Connector.ErrorResponseException: Operation returned an invalid status code 'InternalServerError'
+   at Microsoft.Bot.Connector.Conversations.<CreateConversationWithHttpMessagesAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.Bot.Connector.ConversationsExtensions.<CreateConversationAsync>d__3.MoveNext()<---
+
+2018-06-22 17:35:22.723 +03:00 [Information] Request finished in 39349.9415ms 500 text/html; charset=utf-8
+2018-06-22 17:38:58.401 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:1738/api/Messages application/json 534
+2018-06-22 17:38:58.406 +03:00 [Information] Route matched with "{action = \"Post\", controller = \"Messages\"}". Executing action "WebApplication.Controllers.MessagesController.Post (BobTheBot)"
+2018-06-22 17:38:58.489 +03:00 [Information] Executing action method "WebApplication.Controllers.MessagesController.Post (BobTheBot)" with arguments (["Microsoft.Bot.Connector.Activity"]) - Validation state: Valid
+2018-06-22 17:41:31.546 +03:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:1738/  0
+2018-06-22 17:41:31.546 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:1738/api/values  
+2018-06-22 17:41:31.657 +03:00 [Information] Request finished in 167.1049ms 200 
+2018-06-22 17:41:32.363 +03:00 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing action "BobTheBot.Controllers.ValuesController.Get (BobTheBot)"
+2018-06-22 17:41:32.546 +03:00 [Information] Executing action method "BobTheBot.Controllers.ValuesController.Get (BobTheBot)" - Validation state: Valid
+2018-06-22 17:41:32.559 +03:00 [Information] Executed action method "BobTheBot.Controllers.ValuesController.Get (BobTheBot)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 5.022ms.
+2018-06-22 17:41:32.608 +03:00 [Information] Executing ObjectResult, writing value of type '"System.String[]"'.
+2018-06-22 17:41:32.878 +03:00 [Information] Executed action "BobTheBot.Controllers.ValuesController.Get (BobTheBot)" in 414.8458ms
+2018-06-22 17:41:32.927 +03:00 [Information] Request finished in 1401.3703ms 200 application/json; charset=utf-8
+2018-06-22 17:41:37.528 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:1738/api/Messages application/json 539
+2018-06-22 17:41:37.568 +03:00 [Information] Route matched with "{action = \"Post\", controller = \"Messages\"}". Executing action "WebApplication.Controllers.MessagesController.Post (BobTheBot)"
+2018-06-22 17:41:38.161 +03:00 [Information] Executing action method "WebApplication.Controllers.MessagesController.Post (BobTheBot)" with arguments (["Microsoft.Bot.Connector.Activity"]) - Validation state: Valid
+2018-06-22 17:41:38.441 +03:00 [Information] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite"' with options: "None"
+2018-06-22 17:41:38.825 +03:00 [Information] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""PRAGMA foreign_keys=ON;"
+2018-06-22 17:41:38.845 +03:00 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"s\".\"Id\", \"s\".\"Word\"
+FROM \"SearchKeys\" AS \"s\""
+2018-06-22 17:42:03.934 +03:00 [Information] Executed action "WebApplication.Controllers.MessagesController.Post (BobTheBot)" in 26350.6508ms
+2018-06-22 17:42:04.195 +03:00 [Error] An unhandled exception has occurred while executing the request
+System.AggregateException: One or more errors occurred. (Operation returned an invalid status code 'InternalServerError') ---> Microsoft.Bot.Connector.ErrorResponseException: Operation returned an invalid status code 'InternalServerError'
+   at Microsoft.Bot.Connector.Conversations.<CreateConversationWithHttpMessagesAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.Bot.Connector.ConversationsExtensions.<CreateConversationAsync>d__3.MoveNext()
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at BobTheBot.MessageService.<CheckSentences>d__7.MoveNext() in D:\BobTheBot\BobTheBot\MessageService.cs:line 123
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApplication.Controllers.MessagesController.<Post>d__2.MoveNext() in D:\BobTheBot\BobTheBot\Controllers\MessagesController.cs:line 33
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.<Execute>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__23.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+---> (Inner Exception #0) Microsoft.Bot.Connector.ErrorResponseException: Operation returned an invalid status code 'InternalServerError'
+   at Microsoft.Bot.Connector.Conversations.<CreateConversationWithHttpMessagesAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.Bot.Connector.ConversationsExtensions.<CreateConversationAsync>d__3.MoveNext()<---
+
+2018-06-22 17:42:04.451 +03:00 [Information] Request finished in 26897.9781ms 500 text/html; charset=utf-8
+2018-06-22 17:45:33.811 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:1738/api/Messages application/json 535
+2018-06-22 17:45:33.819 +03:00 [Information] Route matched with "{action = \"Post\", controller = \"Messages\"}". Executing action "WebApplication.Controllers.MessagesController.Post (BobTheBot)"
+2018-06-22 17:45:34.223 +03:00 [Information] Executing action method "WebApplication.Controllers.MessagesController.Post (BobTheBot)" with arguments (["Microsoft.Bot.Connector.Activity"]) - Validation state: Valid
+2018-06-22 17:46:22.751 +03:00 [Information] Executed action "WebApplication.Controllers.MessagesController.Post (BobTheBot)" in 48929.9938ms
+2018-06-22 17:46:22.810 +03:00 [Error] An unhandled exception has occurred while executing the request
+System.AggregateException: One or more errors occurred. (Operation returned an invalid status code 'InternalServerError') ---> Microsoft.Bot.Connector.ErrorResponseException: Operation returned an invalid status code 'InternalServerError'
+   at Microsoft.Bot.Connector.Conversations.<CreateConversationWithHttpMessagesAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.Bot.Connector.ConversationsExtensions.<CreateConversationAsync>d__3.MoveNext()
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at BobTheBot.MessageService.<CheckSentences>d__7.MoveNext() in D:\BobTheBot\BobTheBot\MessageService.cs:line 123
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApplication.Controllers.MessagesController.<Post>d__2.MoveNext() in D:\BobTheBot\BobTheBot\Controllers\MessagesController.cs:line 33
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.<Execute>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__23.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+---> (Inner Exception #0) Microsoft.Bot.Connector.ErrorResponseException: Operation returned an invalid status code 'InternalServerError'
+   at Microsoft.Bot.Connector.Conversations.<CreateConversationWithHttpMessagesAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.Bot.Connector.ConversationsExtensions.<CreateConversationAsync>d__3.MoveNext()<---
+
+2018-06-22 17:46:22.871 +03:00 [Information] Request finished in 49045.5666ms 500 text/html; charset=utf-8
+2018-06-22 17:46:46.975 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:1738/api/Messages application/json 531
+2018-06-22 17:46:46.978 +03:00 [Information] Route matched with "{action = \"Post\", controller = \"Messages\"}". Executing action "WebApplication.Controllers.MessagesController.Post (BobTheBot)"
+2018-06-22 17:46:47.001 +03:00 [Information] Executing action method "WebApplication.Controllers.MessagesController.Post (BobTheBot)" with arguments (["Microsoft.Bot.Connector.Activity"]) - Validation state: Valid
+2018-06-22 17:46:47.401 +03:00 [Information] Executed action method "WebApplication.Controllers.MessagesController.Post (BobTheBot)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 344.6922ms.
+2018-06-22 17:46:47.407 +03:00 [Information] Executing ObjectResult, writing value of type '"RJ.Core.Result`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]"'.
+2018-06-22 17:46:47.444 +03:00 [Information] Executed action "WebApplication.Controllers.MessagesController.Post (BobTheBot)" in 462.8653ms
+2018-06-22 17:46:47.454 +03:00 [Information] Request finished in 471.4716ms 200 application/json; charset=utf-8
+2018-06-22 17:46:56.007 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:1738/api/Messages application/json 534
+2018-06-22 17:46:56.010 +03:00 [Information] Route matched with "{action = \"Post\", controller = \"Messages\"}". Executing action "WebApplication.Controllers.MessagesController.Post (BobTheBot)"
+2018-06-22 17:46:56.040 +03:00 [Information] Executing action method "WebApplication.Controllers.MessagesController.Post (BobTheBot)" with arguments (["Microsoft.Bot.Connector.Activity"]) - Validation state: Valid
+2018-06-22 17:47:21.622 +03:00 [Information] Executed action "WebApplication.Controllers.MessagesController.Post (BobTheBot)" in 25609.6755ms
+2018-06-22 17:47:21.684 +03:00 [Error] An unhandled exception has occurred while executing the request
+System.AggregateException: One or more errors occurred. (Operation returned an invalid status code 'InternalServerError') ---> Microsoft.Bot.Connector.ErrorResponseException: Operation returned an invalid status code 'InternalServerError'
+   at Microsoft.Bot.Connector.Conversations.<CreateConversationWithHttpMessagesAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.Bot.Connector.ConversationsExtensions.<CreateConversationAsync>d__3.MoveNext()
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at BobTheBot.MessageService.<CheckSentences>d__7.MoveNext() in D:\BobTheBot\BobTheBot\MessageService.cs:line 123
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApplication.Controllers.MessagesController.<Post>d__2.MoveNext() in D:\BobTheBot\BobTheBot\Controllers\MessagesController.cs:line 33
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.<Execute>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__23.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+---> (Inner Exception #0) Microsoft.Bot.Connector.ErrorResponseException: Operation returned an invalid status code 'InternalServerError'
+   at Microsoft.Bot.Connector.Conversations.<CreateConversationWithHttpMessagesAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.Bot.Connector.ConversationsExtensions.<CreateConversationAsync>d__3.MoveNext()<---
+
+2018-06-22 17:47:21.735 +03:00 [Information] Request finished in 25725.9177ms 500 text/html; charset=utf-8
+2018-06-22 17:52:56.795 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:1738/api/Messages application/json 527
+2018-06-22 17:52:56.807 +03:00 [Information] Route matched with "{action = \"Post\", controller = \"Messages\"}". Executing action "WebApplication.Controllers.MessagesController.Post (BobTheBot)"
+2018-06-22 17:52:56.938 +03:00 [Information] Executing action method "WebApplication.Controllers.MessagesController.Post (BobTheBot)" with arguments (["Microsoft.Bot.Connector.Activity"]) - Validation state: Valid
+2018-06-22 17:52:57.376 +03:00 [Information] Executed action method "WebApplication.Controllers.MessagesController.Post (BobTheBot)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 435.2729ms.
+2018-06-22 17:52:57.377 +03:00 [Information] Executing ObjectResult, writing value of type '"RJ.Core.Result`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]"'.
+2018-06-22 17:52:57.381 +03:00 [Information] Executed action "WebApplication.Controllers.MessagesController.Post (BobTheBot)" in 571.75ms
+2018-06-22 17:52:57.386 +03:00 [Information] Request finished in 596.5461ms 200 application/json; charset=utf-8
+2018-06-22 17:53:03.122 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:1738/api/Messages application/json 527
+2018-06-22 17:53:03.126 +03:00 [Information] Route matched with "{action = \"Post\", controller = \"Messages\"}". Executing action "WebApplication.Controllers.MessagesController.Post (BobTheBot)"
+2018-06-22 17:53:03.208 +03:00 [Information] Executing action method "WebApplication.Controllers.MessagesController.Post (BobTheBot)" with arguments (["Microsoft.Bot.Connector.Activity"]) - Validation state: Valid
+2018-06-22 17:53:03.459 +03:00 [Information] Executed action method "WebApplication.Controllers.MessagesController.Post (BobTheBot)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 249.3751ms.
+2018-06-22 17:53:03.463 +03:00 [Information] Executing ObjectResult, writing value of type '"RJ.Core.Result`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]"'.
+2018-06-22 17:53:03.468 +03:00 [Information] Executed action "WebApplication.Controllers.MessagesController.Post (BobTheBot)" in 338.0085ms
+2018-06-22 17:53:03.472 +03:00 [Information] Request finished in 351.2431ms 200 application/json; charset=utf-8
+2018-06-22 17:53:12.301 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:1738/api/Messages application/json 527
+2018-06-22 17:53:12.304 +03:00 [Information] Route matched with "{action = \"Post\", controller = \"Messages\"}". Executing action "WebApplication.Controllers.MessagesController.Post (BobTheBot)"
+2018-06-22 17:53:12.326 +03:00 [Information] Executing action method "WebApplication.Controllers.MessagesController.Post (BobTheBot)" with arguments (["Microsoft.Bot.Connector.Activity"]) - Validation state: Valid
+2018-06-22 17:53:12.575 +03:00 [Information] Executed action method "WebApplication.Controllers.MessagesController.Post (BobTheBot)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 246.7452ms.
+2018-06-22 17:53:12.579 +03:00 [Information] Executing ObjectResult, writing value of type '"RJ.Core.Result`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]"'.
+2018-06-22 17:53:12.606 +03:00 [Information] Executed action "WebApplication.Controllers.MessagesController.Post (BobTheBot)" in 275.6517ms
+2018-06-22 17:53:12.618 +03:00 [Information] Request finished in 311.306ms 200 application/json; charset=utf-8
+2018-06-22 17:53:20.548 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:1738/api/Messages application/json 534
+2018-06-22 17:53:20.550 +03:00 [Information] Route matched with "{action = \"Post\", controller = \"Messages\"}". Executing action "WebApplication.Controllers.MessagesController.Post (BobTheBot)"
+2018-06-22 17:53:20.569 +03:00 [Information] Executing action method "WebApplication.Controllers.MessagesController.Post (BobTheBot)" with arguments (["Microsoft.Bot.Connector.Activity"]) - Validation state: Valid
+2018-06-22 17:54:00.552 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:1738/api/Messages application/json 535
+2018-06-22 17:54:00.555 +03:00 [Information] Route matched with "{action = \"Post\", controller = \"Messages\"}". Executing action "WebApplication.Controllers.MessagesController.Post (BobTheBot)"
+2018-06-22 17:54:00.577 +03:00 [Information] Executing action method "WebApplication.Controllers.MessagesController.Post (BobTheBot)" with arguments (["Microsoft.Bot.Connector.Activity"]) - Validation state: Valid
